@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+     <link rel="shortcut icon" href="wof2.bmp" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning forms</title>
+    
+</head>
+<body>
+    <form action="//link of the server" method="get" // method="post">
+        <div>
+            <label for="username">
+                <strong>Username</strong>
+            </label>
+            <br>
+            <input type="text" id = "username" required>
+            <div>
+                <label for="password">
+                   <strong>Password</strong>
+                </label>
+                <br>
+                <input type="password"  id="password" required>
+            </div>
+            
+            <div>
+                <label for="email">
+                    <strong>email</strong>
+                </label>
+                <br>
+                <input type="email" name="" id="email" placeholder="@gmail.com">
+            </div>
+            <div>
+                <label for="dob">
+                    date of birth
+                </label>
+                <br>
+                <input type="date" id="dob" >
+            </div>
+            <div>
+                <label for="range">
+                    Enter the range
+                </label>
+                <br>
+                <input type="range" required min="0" max="100" step="10" >
+            </div>
+            <div>
+                <label for="link">
+                    website
+                </label>
+                <br>
+                <input type="url" placeholder=".com">
+            </div>
+            <div>
+                <label for="country">
+                    country
+                </label>
+                <br>
+                <input type="text" name="country" id="country" value="INDIA" disabled>
+            </div>
+            <br>
+            
+            <div>
+                <p>Gender</p>
+                <br>
+                <input type="radio" name="gender" value="Male" checked> Male<br>
+                <input type="radio" name="gender" value="Female">Female<br>
+                <input type="radio" name="gender" value="Others">Others<br>
+                
+            
+            </div>
+            <br>
+            <div>
+                <p>Select Courses</p>
+                <br>
+                <input type="checkbox" name="course" value="java" checked >Java <br>
+                <input type="checkbox" name="course" value="c++" > C++ <br>
+                <input type="checkbox" name="course" value="web development" >Web development <br>
+                <input type="checkbox" name="course" value="AI-ML" >AI-ML <br>
+                <input type="checkbox" name="course" value="WEB 3" > WEB 3<br>
+            </div>
+            <br>
+
+            
+        </div>
+        <p>Drop-down list with multiple select and selected attribute</p>
+        <div>
+            <select  name="foods liked" id="" multiple>
+                <option selected value="biryani">Biryani</option>
+                <option value="Noodles">Noodles</option>
+                <option value="vada pav">Vada pav</option>
+                <option value="roti">roti</option>
+            </select>
+        </div>
+        <p>Drop-down list without multiple select and selected attribute</p>
+        <div>
+            <select  name="foods liked" id="">
+                <option value="biryani">Biryani</option>
+                <option value="Noodles">Noodles</option>
+                <option value="vada pav">Vada pav</option>
+                <option value="roti">roti</option>
+            </select>
+        </div>
+        <br>
+        <div><a href="#">go to top</a></div>
+        <br>
+        <div>
+            <p>Button attributes and its features</p>
+            <input type="button" value="button-1">
+            <br>
+            <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKpU2fva3cuprE8mIrLcK9w2ZY1WfVNDz5rjUAdw1RSg&usqp=CAU&ec=48665698" alt="" width="100px"></button>
+            <br>
+            <button type="button">Normal Button</button>
+            <br>
+            <button type="reset">Reset Button</button>
+            <br>
+            <button disabled="disabled">Disabled button</button>
+            <br>
+            
+        </div>
+        <div>
+
+            <input type="submit">
+        </div>
+    </form>
+    <h1>MEDIA TAGS</h1>
+    <br>
+    <h1>ADDING AUDIO</h1>
+    <br>
+    
+    <br>
+    <audio src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" controls>THIS IS AUDIO WITH autoplay
+        <br>
+    <h2>Using the source tag</h2>
+
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="mp3">
+    <br>
+    </audio>
+    <h1>ADDING IMAGE USING FIGURE TAG</h1>
+    <br>
+    <figure><img src="https://resizing.flixster.com/hEKN6q2cfAaTQcirCmYEeGqBv4Y=/206x305/v2/https://flxt.tmsimg.com/assets/p13993632_b_v8_ab.jpg" alt="">
+    <figcaption>THIS IS AOT POSTER</figcaption>
+    </figure>
+    <br>
+    <figure><video src="http://techslides.com/demos/sample-videos/small.mp4" autoplay muted loop controls></video>
+    <figcaption>THIS IS  VIDEO WITH autoplay,muted and loop</figcaption>
+    </figure>
+    <br>
+    <figure><video src="http://techslides.com/demos/sample-videos/small.mp4"  controls></video>
+        <figcaption>THIS IS A VIDEO WITHOUT autoplay</figcaption>
+    </figure>
+    
+</body>
+</html>
